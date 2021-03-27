@@ -1,0 +1,329 @@
+header {
+  background-color: #fafafa;
+}
+
+.logo {
+  margin-left: 13%;
+}
+
+nav {
+  background-color: #ffffff;
+  height: 72px;
+  padding: 2em 0.5em;
+  z-index: 50;
+  position: relative;
+  width: 100%;
+}
+
+nav,
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-nav__toggler {
+  display: none;
+}
+
+li {
+  margin: 0 0.5em;
+}
+
+.nav-items {
+  padding-top: 0;
+  margin-top: 0;
+  margin-right: 0.5em;
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+  text-transform: capitalize;
+}
+
+.nav-items a:hover::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 4px;
+  background-color: var(--Lime-Green);
+
+  bottom: 0;
+}
+
+.nav-ctas {
+  margin-top: -0.5em;
+  padding-bottom: 2em;
+  margin-right: 10%;
+}
+.cta {
+  padding: 0.7em 1.2em;
+  border-radius: 25px;
+  border-width: 0;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to right,
+    var(--Lime-Green),
+    var(--Bright-Cyan)
+  );
+
+  text-transform: capitalize;
+  color: var(--White);
+}
+
+.cta:hover {
+  opacity: 0.5;
+}
+
+.hero {
+  /* border:2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-content {
+  position: relative;
+  flex: 60%;
+  margin-left: 0.9em;
+}
+
+.top-img {
+  position: absolute;
+  right: -41%;
+  top: 0;
+  width: 100%;
+  padding-bottom: 2em;
+  z-index: 2;
+  margin-top: -7em;
+}
+.image-content img {
+  width: 100%;
+}
+
+.text-content {
+  padding: 5em 2em;
+  flex: 40%;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: var(--Dark-Blue);
+  font-weight: 300;
+}
+
+.text-content p {
+  overflow-wrap: break-word;
+  line-height: 1.5rem;
+  margin-top: 0.5em;
+}
+
+.cta-2 {
+  padding: 0.7em 1.2em;
+  border-radius: 25px;
+  border-width: 0;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to right,
+    var(--Lime-Green),
+    var(--Bright-Cyan)
+  );
+  margin-top: 1em;
+  text-transform: capitalize;
+  color: var(--White);
+}
+
+.cta-2:hover {
+  opacity: 0.5;
+}
+
+.feature {
+  background-color: #f4f5f7;
+}
+
+.feature-text {
+  width: 70%;
+  padding: 3em 2em;
+  color: var(--Grayish-Blue);
+}
+.feature-text h3 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+.feature-text p {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
+
+.feature-card {
+  display: flex;
+  padding: 1.5em 2em;
+  color: var(--Grayish-Blue);
+}
+
+.card {
+  flex: 25%;
+  padding-right: 0.5em;
+}
+
+.card h3,
+img {
+  margin-bottom: 1.5em;
+}
+.card h3 {
+  font-size: 1.3rem;
+  color: var(--Dark-Blue);
+  text-transform: capitalize;
+}
+
+.card p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+
+  font-weight: 400;
+}
+
+.card-para3 {
+  margin-top: -17px;
+  padding-top: 0;
+  border: 2px solid blue;
+}
+
+/* article */
+
+article {
+  background-color: #fafafa;
+  padding-bottom: 3em;
+}
+.h5 {
+  margin-bottom: 1em;
+  padding: 3em 0.5em;
+  color: var(--Grayish-Blue);
+}
+
+article h5 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.article-card img {
+  width: 100%;
+}
+
+.article-card .money-img {
+  width: 100%;
+  height: 37%;
+}
+.article-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 0.5em;
+}
+
+.article-card .ar-card {
+  /* border:2px solid red; */
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.ar-card .card-text {
+  margin-top: 0.5em;
+  padding-left: 0.9em;
+  padding-bottom: 0.9em;
+}
+
+.card-text .author,
+h2 {
+  margin-bottom: 0.5em;
+}
+
+.card-text h2 {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.card-text h2:hover {
+  color: var(--Lime-Green);
+  cursor: pointer;
+}
+
+.card-text .author,
+p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: var(--Grayish-Blue);
+}
+
+/* footer area */
+
+footer {
+  background-color: #2d314e;
+  padding: 2em;
+}
+
+.foot-nav {
+  display: flex;
+  margin-bottom: 1.4em;
+}
+
+.foot-ul {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  margin-left: 10em;
+  padding: 0 2em;
+}
+
+.foot-ul a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--Light-Grayish-Blue);
+}
+.f-logo {
+  margin-bottom: 2em;
+}
+.f-logo img {
+  color: #fff;
+  padding: 0.5em;
+  opacity: 1;
+  width: 50%;
+  background-color: #fff;
+}
+.social-icon a {
+  color: #fff;
+  margin-right: 0.5em;
+}
+
+.foot-cta {
+  padding-left: 0.5em;
+}
+
+.foot-cta p {
+  padding-left: 1.5em;
+  margin-left: 0.9em;
+}
+.foot-cta .cta-2 {
+  margin-top: 0;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1.4em;
+  padding-top: 1.5em;
+}
+
+.attribution a span {
+  display: block;
+  color: var(--Lime-Green);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
